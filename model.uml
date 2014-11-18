@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_QxjTQBy7EeS66vDWswCkQQ" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1kgUwG9cEeSX_KflvYh8fw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_134jwG9cEeSX_KflvYh8fw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Activity" xmi:id="_Tk8n8By7EeS66vDWswCkQQ" name="Factory Activity" node="_WVFNQBy7EeS66vDWswCkQQ _lfI_0By_EeS66vDWswCkQQ _41DEkBy_EeS66vDWswCkQQ __Rx3cBy_EeS66vDWswCkQQ _lcYRMB03EeSGAoKbMP7RjA _19YTcB05EeSGAoKbMP7RjA _8QI1gB06EeSGAoKbMP7RjA _QTHboB07EeSGAoKbMP7RjA _uXG-QB08EeSGAoKbMP7RjA">
     <edge xmi:type="uml:ControlFlow" xmi:id="_oTDccBzAEeS66vDWswCkQQ" name="ControlFlow2" source="_41DEkBy_EeS66vDWswCkQQ" target="__Rx3cBy_EeS66vDWswCkQQ"/>
     <edge xmi:type="uml:ControlFlow" xmi:id="_pv5N4BzAEeS66vDWswCkQQ" name="ControlFlow3" source="_WVFNQBy7EeS66vDWswCkQQ" target="_41DEkBy_EeS66vDWswCkQQ"/>
@@ -145,8 +151,26 @@
       <message xmi:type="uml:Message" xmi:id="_PLlLYG5GEeSlpO_h8QeRUQ" name="11:update_attribute_values" messageSort="asynchCall" receiveEvent="_PLnnoG5GEeSlpO_h8QeRUQ" sendEvent="_PLnAkG5GEeSlpO_h8QeRUQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_c5x2ADOIEeSWivfibQp5vw" name="Factory" isAbstract="true"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_mhxD8DOIEeSWivfibQp5vw" name="FactoryMapping"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_pwcmcDOIEeSWivfibQp5vw" name="MappingModelica"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mhxD8DOIEeSWivfibQp5vw" name="MoComponent">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UevXUG9oEeSX_KflvYh8fw" general="_UO8eQG9cEeSX_KflvYh8fw"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_BZBPMG9eEeSX_KflvYh8fw" name="pin" type="_pwcmcDOIEeSWivfibQp5vw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1pdQG9eEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J1qrYG9eEeSX_KflvYh8fw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QAoY0G9eEeSX_KflvYh8fw" name="variables" type="_82DPwG9cEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TBIVYG9eEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TBJjgG9eEeSX_KflvYh8fw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0nCVAG9eEeSX_KflvYh8fw" name="toModelica"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_F_S1wG9pEeSX_KflvYh8fw" name="createConnector"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pwcmcDOIEeSWivfibQp5vw" name="MoConnector">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_l4OpIG9cEeSX_KflvYh8fw" name="variables" type="_82DPwG9cEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oIliMG9cEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oIn-cG9cEeSX_KflvYh8fw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_crU_QG9dEeSX_KflvYh8fw" name="toModelica"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_nWtScDOJEeSWivfibQp5vw" name="Mapping">
       <nestedClassifier xmi:type="uml:FunctionBehavior" xmi:id="_qv1xcDOJEeSWivfibQp5vw" name="addAttribute"/>
       <nestedClassifier xmi:type="uml:FunctionBehavior" xmi:id="_srhbADOJEeSWivfibQp5vw" name="addComponent"/>
@@ -202,6 +226,114 @@
       <message xmi:type="uml:Message" xmi:id="_DjUncG5JEeSlpO_h8QeRUQ" name="ok_message" messageSort="reply" receiveEvent="_DjXDsG5JEeSlpO_h8QeRUQ" sendEvent="_DjV1kG5JEeSlpO_h8QeRUQ"/>
       <message xmi:type="uml:Message" xmi:id="_HkXbAG5JEeSlpO_h8QeRUQ" name="ok_message" messageSort="reply" receiveEvent="_HkZ3QG5JEeSlpO_h8QeRUQ" sendEvent="_HkZQMG5JEeSlpO_h8QeRUQ"/>
       <message xmi:type="uml:Message" xmi:id="_N3Br4G5JEeSlpO_h8QeRUQ" name="5:Message" messageSort="asynchCall" receiveEvent="_N3DhEG5JEeSlpO_h8QeRUQ" sendEvent="_N3C6AG5JEeSlpO_h8QeRUQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UO8eQG9cEeSX_KflvYh8fw" name="MoModel">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bMYDEG9fEeSX_KflvYh8fw" name="components" type="_mhxD8DOIEeSWivfibQp5vw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ftVs0G9fEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ftWT4G9fEeSX_KflvYh8fw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cPz2AG9fEeSX_KflvYh8fw" name="variables" type="_82DPwG9cEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pQbMoG9fEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pQbzsG9fEeSX_KflvYh8fw" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UEdlMG9fEeSX_KflvYh8fw" name="toModelica"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zf3tEG9oEeSX_KflvYh8fw" name="createComponent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1Ug6gG9oEeSX_KflvYh8fw" name="createVariable"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_2U4yYG9oEeSX_KflvYh8fw" name="connectComponents"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_82DPwG9cEeSX_KflvYh8fw" name="MoVariable">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DgaO8G9dEeSX_KflvYh8fw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HiY2oG9dEeSX_KflvYh8fw" name="datatype">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IvYOMG9dEeSX_KflvYh8fw" name="variability">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SrEbQG9dEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SrFCUG9dEeSX_KflvYh8fw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JuUisG9dEeSX_KflvYh8fw" name="visibility">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SrFpYG9dEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SrG3gG9dEeSX_KflvYh8fw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_y9QJMG9dEeSX_KflvYh8fw" name="flow">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0cegQG9dEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0cfuYG9dEeSX_KflvYh8fw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zFJPAG9fEeSX_KflvYh8fw" name="moModel_moComponent_1" memberEnd="_zFJPAW9fEeSX_KflvYh8fw _zFIA4G9fEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zFJPAW9fEeSX_KflvYh8fw" name="moModel" type="_UO8eQG9cEeSX_KflvYh8fw" association="_zFJPAG9fEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zFJPAm9fEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zFJPA29fEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zFIA4G9fEeSX_KflvYh8fw" name="moComponent" type="_mhxD8DOIEeSWivfibQp5vw" aggregation="shared" association="_zFJPAG9fEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zFIA4W9fEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zFIA4m9fEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Nf0-EG9gEeSX_KflvYh8fw" name="moComponent_moConnector_1" memberEnd="_Nf0-EW9gEeSX_KflvYh8fw _Nf0XAG9gEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Nf0-EW9gEeSX_KflvYh8fw" name="moComponent" type="_mhxD8DOIEeSWivfibQp5vw" association="_Nf0-EG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nf0-Em9gEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nf0-E29gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Nf0XAG9gEeSX_KflvYh8fw" name="moConnector" type="_pwcmcDOIEeSWivfibQp5vw" aggregation="shared" association="_Nf0-EG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nf0XAW9gEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nf0XAm9gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QptgIG9gEeSX_KflvYh8fw" name="moModel_moVariable_1" memberEnd="_QptgIW9gEeSX_KflvYh8fw _QpsSAG9gEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QptgIW9gEeSX_KflvYh8fw" name="moModel" type="_UO8eQG9cEeSX_KflvYh8fw" association="_QptgIG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QptgIm9gEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QptgI29gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QpsSAG9gEeSX_KflvYh8fw" name="moVariable" type="_82DPwG9cEeSX_KflvYh8fw" aggregation="shared" association="_QptgIG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QpsSAW9gEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QpsSAm9gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a2fdMG9gEeSX_KflvYh8fw" name="moComponent_moVariable_1" memberEnd="_a2fdMW9gEeSX_KflvYh8fw _a2ePEG9gEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2fdMW9gEeSX_KflvYh8fw" name="moComponent" type="_mhxD8DOIEeSWivfibQp5vw" association="_a2fdMG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2fdMm9gEeSX_KflvYh8fw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2fdM29gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a2ePEG9gEeSX_KflvYh8fw" name="moVariable" type="_82DPwG9cEeSX_KflvYh8fw" aggregation="shared" association="_a2fdMG9gEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a2ePEW9gEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a2ePEm9gEeSX_KflvYh8fw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_SDvb4G9lEeSX_KflvYh8fw" name="edu.smartslab.cim2model.mapping">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ToAHIG9pEeSX_KflvYh8fw" name="FactoryMapping">
+      <ownedBehavior xmi:type="uml:FunctionBehavior" xmi:id="_YZoqIG9pEeSX_KflvYh8fw" name="createMapping">
+        <language>JAVA</language>
+        <body></body>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UX7vQG9pEeSX_KflvYh8fw" name="ModMapping">
+      <ownedBehavior xmi:type="uml:FunctionBehavior" xmi:id="_jum-UG9pEeSX_KflvYh8fw" name="createModel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rv0BAG9qEeSX_KflvYh8fw" name="factoryMapping_modMapping_1" memberEnd="_Rv0BAW9qEeSX_KflvYh8fw _RvzZ8G9qEeSX_KflvYh8fw" navigableOwnedEnd="_RvzZ8G9qEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Rv0BAW9qEeSX_KflvYh8fw" name="factoryMapping" type="_ToAHIG9pEeSX_KflvYh8fw" association="_Rv0BAG9qEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rv0BAm9qEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rv0BA29qEeSX_KflvYh8fw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RvzZ8G9qEeSX_KflvYh8fw" name="modMapping" type="_UX7vQG9pEeSX_KflvYh8fw" association="_Rv0BAG9qEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RvzZ8W9qEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RvzZ8m9qEeSX_KflvYh8fw" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WuoEYG9qEeSX_KflvYh8fw" name="modMapping_moModel_1" memberEnd="_WuoEYW9qEeSX_KflvYh8fw _Wum2QG9qEeSX_KflvYh8fw" navigableOwnedEnd="_Wum2QG9qEeSX_KflvYh8fw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WuoEYW9qEeSX_KflvYh8fw" name="modMapping" type="_UX7vQG9pEeSX_KflvYh8fw" association="_WuoEYG9qEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WuoEYm9qEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WuoEY29qEeSX_KflvYh8fw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Wum2QG9qEeSX_KflvYh8fw" name="moModel" type="_UO8eQG9cEeSX_KflvYh8fw" association="_WuoEYG9qEeSX_KflvYh8fw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wum2QW9qEeSX_KflvYh8fw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wum2Qm9qEeSX_KflvYh8fw" value="1"/>
+      </ownedEnd>
     </packagedElement>
   </packagedElement>
 </uml:Model>
