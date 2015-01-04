@@ -30,7 +30,11 @@
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
+<<<<<<< Updated upstream
           <emfPageIdentifier href="model.notation#_DjB4sHyQEeSVE82QSypUQw"/>
+=======
+          <emfPageIdentifier href="model.notation#_ePQgcC3QEeSh8Y0pbL-M1A"/>
+>>>>>>> Stashed changes
         </children>
       </children>
     </windows>

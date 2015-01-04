@@ -16,7 +16,11 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_fJiXYi3QEeSh8Y0pbL-M1A" x="20" y="80"/>
       </children>
       <element xmi:type="uml:Actor" href="model.uml#_fH2VUC3QEeSh8Y0pbL-M1A"/>
+<<<<<<< Updated upstream
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fJhJQS3QEeSh8Y0pbL-M1A" x="160" y="173"/>
+=======
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fJhJQS3QEeSh8Y0pbL-M1A" x="20" y="166"/>
+>>>>>>> Stashed changes
     </children>
     <children xmi:type="notation:Shape" xmi:id="_gYcagC3QEeSh8Y0pbL-M1A" type="2013">
       <children xmi:type="notation:DecorationNode" xmi:id="_gYcagi3QEeSh8Y0pbL-M1A" type="5016"/>
@@ -26,7 +30,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gYdBky3QEeSh8Y0pbL-M1A"/>
       </children>
       <element xmi:type="uml:UseCase" href="model.uml#_gXweAC3QEeSh8Y0pbL-M1A"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gYcagS3QEeSh8Y0pbL-M1A" x="301" y="97"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gYcagS3QEeSh8Y0pbL-M1A" x="191" y="92"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_jyvXIC3QEeSh8Y0pbL-M1A" type="2013">
       <children xmi:type="notation:DecorationNode" xmi:id="_jyv-MC3QEeSh8Y0pbL-M1A" type="5016"/>
@@ -36,7 +40,11 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyv-NC3QEeSh8Y0pbL-M1A"/>
       </children>
       <element xmi:type="uml:UseCase" href="model.uml#_jyp3kC3QEeSh8Y0pbL-M1A"/>
+<<<<<<< Updated upstream
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyvXIS3QEeSh8Y0pbL-M1A" x="289" y="338"/>
+=======
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jyvXIS3QEeSh8Y0pbL-M1A" x="212" y="303"/>
+>>>>>>> Stashed changes
     </children>
     <children xmi:type="notation:Shape" xmi:id="_lqdGsC3QEeSh8Y0pbL-M1A" type="2013">
       <children xmi:type="notation:DecorationNode" xmi:id="_lqdGsi3QEeSh8Y0pbL-M1A" type="5016"/>
@@ -46,7 +54,11 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lqdGti3QEeSh8Y0pbL-M1A"/>
       </children>
       <element xmi:type="uml:UseCase" href="model.uml#_lqXAEC3QEeSh8Y0pbL-M1A"/>
+<<<<<<< Updated upstream
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lqdGsS3QEeSh8Y0pbL-M1A" x="368" y="209"/>
+=======
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lqdGsS3QEeSh8Y0pbL-M1A" x="260" y="195"/>
+>>>>>>> Stashed changes
     </children>
     <children xmi:type="notation:Shape" xmi:id="_pywY0C3QEeSh8Y0pbL-M1A" type="2013">
       <children xmi:type="notation:DecorationNode" xmi:id="_pywY0i3QEeSh8Y0pbL-M1A" type="5016"/>
@@ -56,7 +68,11 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pyw_4y3QEeSh8Y0pbL-M1A"/>
       </children>
       <element xmi:type="uml:UseCase" href="model.uml#_pyprIC3QEeSh8Y0pbL-M1A"/>
+<<<<<<< Updated upstream
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pywY0S3QEeSh8Y0pbL-M1A" x="578" y="329"/>
+=======
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pywY0S3QEeSh8Y0pbL-M1A" x="469" y="302"/>
+>>>>>>> Stashed changes
     </children>
     <children xmi:type="notation:Shape" xmi:id="_rnHSYC3QEeSh8Y0pbL-M1A" type="2011">
       <children xmi:type="notation:DecorationNode" xmi:id="_rnH5cC3QEeSh8Y0pbL-M1A" type="5014">
@@ -69,7 +85,11 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_rnH5dS3QEeSh8Y0pbL-M1A" x="20" y="80"/>
       </children>
       <element xmi:type="uml:Actor" href="model.uml#_rnAksC3QEeSh8Y0pbL-M1A"/>
+<<<<<<< Updated upstream
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rnHSYS3QEeSh8Y0pbL-M1A" x="738" y="185"/>
+=======
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rnHSYS3QEeSh8Y0pbL-M1A" x="619" y="171"/>
+>>>>>>> Stashed changes
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_ePQgcS3QEeSh8Y0pbL-M1A"/>
     <element xmi:type="uml:Model" href="model.uml#_QxjTQBy7EeS66vDWswCkQQ"/>

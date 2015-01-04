@@ -13,7 +13,7 @@
     <extend xmi:type="uml:Extend" xmi:id="_vxJp4C3QEeSh8Y0pbL-M1A" extendedCase="_jyp3kC3QEeSh8Y0pbL-M1A"/>
     <extend xmi:type="uml:Extend" xmi:id="_wQ0BYC3QEeSh8Y0pbL-M1A" extendedCase="_gXweAC3QEeSh8Y0pbL-M1A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_pyprIC3QEeSh8Y0pbL-M1A" name="Generate Code">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pyprIC3QEeSh8Y0pbL-M1A" name="Code Generation">
     <include xmi:type="uml:Include" xmi:id="_xYWRMC3QEeSh8Y0pbL-M1A" addition="_lqXAEC3QEeSh8Y0pbL-M1A"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_rnAksC3QEeSh8Y0pbL-M1A" name="System"/>
